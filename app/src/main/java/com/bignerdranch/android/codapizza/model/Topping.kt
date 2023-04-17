@@ -21,5 +21,4 @@ enum class Topping(
     Pepperoni(
         toppingName = R.string.topping_pepperoni
     )
-
 }
