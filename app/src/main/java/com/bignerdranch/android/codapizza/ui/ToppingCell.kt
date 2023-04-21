@@ -1,5 +1,6 @@
 package com.bignerdranch.android.codapizza.ui
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -18,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.bignerdranch.android.codapizza.model.Topping
 import com.bignerdranch.android.codapizza.model.ToppingPlacement
 
-@Preview(device = "id:pixel_6_pro")
+@Preview(device = "id:pixel_6_pro", showBackground = true)
 @Composable
 private fun ToppingCellPreview() {
     ToppingCell(
@@ -28,7 +29,7 @@ private fun ToppingCellPreview() {
     )
 }
 
-@Preview(device = "id:pixel_6_pro")
+@Preview(device = "id:pixel_6_pro", showBackground = true)
 @Composable
 private fun ToppingCellPreviewNotOnPizza() {
     ToppingCell(
@@ -54,7 +55,7 @@ fun ToppingCell(
         Checkbox(
             checked = (placement != null),
             onCheckedChange = {
-                /* "TODO" */
+                onCLickTopping.invoke()
             })
 
         Column(

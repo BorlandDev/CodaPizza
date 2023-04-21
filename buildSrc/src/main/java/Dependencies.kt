@@ -16,5 +16,6 @@ object Dependencies {
         const val androidApplication = "com.android.application"
         const val androidLibrary = "com.android.library"
         const val kotlinVersion = "org.jetbrains.kotlin.android"
+        const val parcelable = "org.jetbrains.kotlin.plugin.parcelize"
     }
 }

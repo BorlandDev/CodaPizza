@@ -3,4 +3,5 @@ plugins {
     id(Dependencies.Plugins.androidApplication) version "8.0.0" apply false
     id(Dependencies.Plugins.androidLibrary) version "8.0.0" apply false
     id(Dependencies.Plugins.kotlinVersion) version "1.8.20" apply false
+    id(Dependencies.Plugins.parcelable) version "1.6.10" apply false
 }
